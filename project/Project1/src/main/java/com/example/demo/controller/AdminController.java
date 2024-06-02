@@ -37,6 +37,7 @@ public class AdminController {
     	return "adminHome";
     }
     
+    
   //Category Section
     @GetMapping("/admin/categories")
     public String getCategoryPage(Model model) {
@@ -183,7 +184,12 @@ public class AdminController {
 					model.addAttribute("message", "Resistered Successfully");
 					return "register"; 
 				}
-
+    
+		@GetMapping("admin/users")
+		public String NewUser()
+		{
+			return "register"; 
+		}
 	
 	
 }

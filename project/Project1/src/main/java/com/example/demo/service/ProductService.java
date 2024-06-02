@@ -33,10 +33,10 @@ public class ProductService {
    {
 	   return productRepository.findById(id);
    }
-//	public List<Product> getAllProductByCategoryId(int id)
-//	{
-//		return productRepository.findAllByCategoryId(id);
-//	}
+	public List<Product> getProductByCategoryId(int id)
+	{
+		return productRepository.findAllProductByCategoryId(id);
+	}
 
 	public void saveProduct(Product product) 
 	{
